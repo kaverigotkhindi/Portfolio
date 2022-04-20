@@ -1,30 +1,53 @@
 :root{
-    --primary-color : #b9bbbc ;
+    --primary-color : #e5e6e8 ;
     --secondary-color : #3d4242;
 }
 .dark-theme{
     --primary-color : #101112 ;
-    --secondary-color : #ebeded;
+    --secondary-color : #e5e6e8 ;
+    
+}
+.font-style{
+    color: var(--primary-color);
+    font-family:monospace;
+
 }
 body{
     display:flex;
     flex-direction: column;
     background-color:var(--primary-color);
 }
+#icon{
+    cursor: pointer;
+}
 
-
-.site-header{
-    margin:0;
-    padding: 0;    
+.btn{
+    border-radius: 20px;
+    border: none;
+    background-color: var(--secondary-color);    
+    height: 40px;
+    width: 120px;
+    margin:25px;
+    cursor: pointer;
+    font-family:monospace;
+}
+.site-header-font{
     color : var(--secondary-color);
     font-family:monospace;
+    font-size: 18px;
+    font-weight: 900;
+
+}
+.site-header{
+    margin:0;
+    padding: 0;       
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    }
 
-}
+    
 .menu-list ul{
     display: flex;
     list-style: none;
@@ -36,15 +59,6 @@ body{
     width: 45px;
 }
 
-.btn{
-    border-radius: 20px;
-    border: none;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    height: 40px;
-    width: 120px;
-    margin:25px;
-}
 .site-header-content{
     margin:10px;
 }
@@ -59,3 +73,49 @@ body{
 body{
     margin:0;
 }
+.wrapper{
+    /* position: relative; */
+    max-width: 430px;
+    width: 100%;
+    /* background: rgb(214, 208, 208); */
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    margin: auto;
+    margin-top: 10px;
+}
+.wrapper form{
+    margin-top: 30px;
+  }
+  
+.form-container{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 75vh;
+    max-width: 75vw;
+    /* background-color: var(--secondary-color);   */
+    max-width: 500px;
+    padding: 10px;
+    
+}
+.input-box{
+    margin: 12px;
+}
+
+.text-box-style{
+       
+  margin: 18px 0;
+   border-radius: 10px; 
+    border: 5px solid rgba(35, 33, 33, 0.2);
+    padding: 2px;
+    height: 100%;
+  width: 100%;
+  padding: 0 15px;
+  font-family:monospace;
+  font-size: 15px;
+  
+   }
+  

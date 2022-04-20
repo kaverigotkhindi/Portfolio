@@ -9,3 +9,6 @@ document.body.classList.toggle("dark-theme");
    icon.src = "moon.png";
 }
 }
+// function message(){
+// document.getElementById("wrapper").innerHTML = 'Your message has been sent successfully';
+// }
