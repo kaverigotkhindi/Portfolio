@@ -34,7 +34,7 @@ body{
 .site-header-font{
     color : var(--secondary-color);
     font-family:monospace;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 900;
 
 }
@@ -74,16 +74,15 @@ body{
     margin:0;
 }
 .wrapper{
-    /* position: relative; */
+    
     max-width: 430px;
-    width: 100%;
-    /* background: rgb(214, 208, 208); */
     padding: 34px;
     border-radius: 6px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     margin: auto;
     margin-top: 10px;
 }
+
 .wrapper form{
     margin-top: 30px;
   }
@@ -101,6 +100,13 @@ body{
     padding: 10px;
     
 }
+/* for screens that are 992 px wide or less than that will have this following property*/
+@media screen and (max-width: 400px) {
+    .form-container {
+      height:100vh;
+      font-size: 12px;
+    }
+  }
 .input-box{
     margin: 12px;
 }
@@ -118,4 +124,5 @@ body{
   font-size: 15px;
   
    }
+   
   
